@@ -1,0 +1,2 @@
+export SESSION_SECRET="123"
+export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/Reader.json"
