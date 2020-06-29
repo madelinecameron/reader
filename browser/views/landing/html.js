@@ -17,7 +17,6 @@ module.exports = (functions, state, emit) => {
         </div>
       </div>
       <div id="speed-read-area" class="w-full py-3">
-        <p class="text-3xl text-center">Test</p>
       </div>
       <div id="audio-player">
       </div>
