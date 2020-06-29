@@ -12,17 +12,22 @@ Google is the only one in the loop (It uses Google's text-to-speech), but I trus
 
 ## Set up
 1. Have server with nginx and supervisor installed
+
 	a. Alternatively, you can run `./startup` in the scripts folder
+
 2. Have SSH access to server
 3. Replace variables with proper variables in `.profile`
+
 	a. For GOOGLE_APPLICATION_CREDENTIALS:
 	https://www.npmjs.com/package/@google-cloud/text-to-speech#before-you-begin
-4. Add your `server_name` param to `infra/reader` (nginx conf)
-5. Replace 0.0.0.0 with your server's IP in `provision` along with the path to the SSH key
-6. `./provision`
-7. Replace 0.0.0.0 with your server's IP in `deploy` along with the path to the SSH key
-8. `./deploy`
-9. Replace "reader.domain.com" in `server/index.js` with your own domain
+
+4. Run `make browser`
+5. Add your `server_name` param to `infra/reader` (nginx conf)
+6. Replace 0.0.0.0 with your server's IP in `provision` along with the path to the SSH key
+7. `./provision`
+8. Replace 0.0.0.0 with your server's IP in `deploy` along with the path to the SSH key
+9. `./deploy`
+10. Replace "reader.domain.com" in `server/index.js` with your own domain
 
 Or do it your way, I dunno.
 
