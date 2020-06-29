@@ -3,7 +3,7 @@
 echo 'Hash-busting index.html'
 ./scripts/rewriteIndex
 echo 'Syncing files to server'
-rsync --exclude=node_modules/ -rave "ssh -i ~/.ssh/qnzl -A" * root@45.76.2.252:reader;
+rsync --exclude=node_modules/ -rave "ssh -i ~/.ssh/qnzl -A" * root@0.0.0.0:reader;
 echo 'SSHing in and restarting the server'
-ssh root@45.76.2.252 -i ~/.ssh/qnzl "cd reader && npm install && sudo supervisorctl restart reader"
+ssh root@0.0.0.0 -i ~/.ssh/qnzl "cd reader && npm install && sudo supervisorctl restart reader"
 
