@@ -8,5 +8,9 @@ const page = {
 module.exports = (state, emit) => {
   const functions = page.implementation(state, emit)
 
+  if (!state.speed) {
+    state.speed = 1.0
+  }
+
   return page.html(functions, state, emit)
 }

@@ -9,9 +9,9 @@ const text2SpeechClient = new textToSpeech.TextToSpeechClient()
 const router = express.Router()
 
 const synthesize = async (req, res, next) => {
-  const { text } = req.body
+  const { text, speed } = req.body
 
-  debug(`creating mp3 for words`)
+  debug(`creating mp3 for words @ speed ${speed}`)
 
   const request = {
     input: {
@@ -26,7 +26,7 @@ const synthesize = async (req, res, next) => {
     // select the type of audio encoding
     audioConfig: {
       audioEncoding: `MP3`,
-      speakingRate: 1.5,
+      speakingRate: speed,
       sampleRateHertz: 44100
     },
   }

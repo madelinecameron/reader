@@ -8,12 +8,12 @@ const {
   PORT
 } = process.env
 
-const port = process.env.PORT || 3081
+const port = process.env.PORT || 3088
 
 if (NODE_ENV === `production`) {
   https.createServer({
-    key: fs.readFileSync(`/etc/letsencrypt/live/reader.domain.com/privkey.pem`),
-    cert: fs.readFileSync(`/etc/letsencrypt/live/reader.domain.com/cert.pem`),
+    key: fs.readFileSync(`/etc/letsencrypt/live/reader.maddie.today/privkey.pem`),
+    cert: fs.readFileSync(`/etc/letsencrypt/live/reader.maddie.today/cert.pem`),
   }, app).listen(port, () => {
     console.log(`Express server listening on port ${port}, ENV=production`)
   })

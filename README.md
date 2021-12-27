@@ -2,13 +2,11 @@
 
 > For people who don't read gud
 
-According to many and evidenced by the many times I misunderstand sentences, I apparently struggle with slowing down and reading things.
+As attested by many, I suck at staying focused on reading. This is a self-hosted site that uses Google's WaveNet to read to me.
 
-In addition, I am by far an auditory learner.
+Use it if you trust me or setup your own thing.
 
-This simple site is intended to be a self-hosted text-to-speech + speed-reading site. I never felt comfortable pasting text into a public site.
-
-Google is the only one in the loop (It uses Google's text-to-speech), but I trust Google more than some random site.
+Generated MP3s (and therefore what you type) are retained for 24 hours until the server clears out the folder.
 
 ## Set up
 1. Have server with nginx and supervisor installed
@@ -37,6 +35,6 @@ Paste text into the text box, push "Read" button
 
 ## Disclaimer
 
-I take no responsibility if you paste something super secret into this and it leaks out. It probably won't, but this isn't completely self-isolated
+I take no responsibility if you paste something super secret into this and it leaks out. It probably won't, but this isn't completely self-isolated.
 
 Be reasonable and thoughtful.

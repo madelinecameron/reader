@@ -17,6 +17,14 @@ const beginSpeedReader = (text) => {
 module.exports = (state, emit) => {
   const functions = {}
 
+  functions.changeSpeed = (e) => {
+    const value = e.currentTarget.value
+
+    state.speed = value
+
+    $('#speedText').text(`${Number(value).toFixed(1)}x`)
+  }
+
   functions.transcribe = async (e) => {
     e.preventDefault()
 
@@ -27,7 +35,7 @@ module.exports = (state, emit) => {
       headers: {
         [`Content-Type`]: `application/json`
       },
-      body: JSON.stringify({ text })
+      body: JSON.stringify({ text, speed: state.speed })
     })
 
     // Hack-ish cache bust despite my attempt at not having my static server have one
