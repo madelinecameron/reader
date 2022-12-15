@@ -18,7 +18,7 @@
     "compression": "^1.7.3",
     "debug": "^3.2.6",
     "ecstatic": "^3.3.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "fs-extra": "^9.0.1",
     "get-form-data": "^1.2.5",
     "mollify": "^2.0.2"
