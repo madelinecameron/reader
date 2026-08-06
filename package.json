@@ -11,7 +11,7 @@
     "lint-fix": "eslint browser/** server/** --fix"
   },
   "dependencies": {
-    "@google-cloud/text-to-speech": "^3.0.0",
+    "@google-cloud/text-to-speech": "^6.4.1",
     "@tailwindcss/ui": "^0.1.3",
     "body-parser": "^1.18.3",
     "choo": "^6.13.0",
